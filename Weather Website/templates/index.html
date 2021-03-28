@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>T - Weather | Weather App</title>
+   <link rel="stylesheet" href="/static/styles/style.css">
+<!-- 
+<style>
+   
+</style> -->
+</head>
+
+<body id="body">
+   <div class="container-fluid px-1 px-sm-3 py-5 mx-auto">
+      <div class="row d-flex justify-content-center">
+         <div class="row card0">
+
+            <div id="weather-image-box" class="text-center">
+               <!-- <img id="weather-image" class="image mt-5" src="/static/Sunny.png"> -->
+               <img id="weather-image" class="image mt-5" src="/static/weather.png">
+            </div>
+
+            <div id="weather-info-1" class="row px-3 mt-3 mb-3">
+               <h1 style="font-size: 91px;">{{temp}}&#176;C</h1>
+
+               <div class="d-flex flex-column mr-3">
+                  <h1 class="mt-3 mb-0">{{city}}</h1>
+                  <h3>{{current_date}}</h3>
+               </div>
+
+               <div class="d-flex flex-column text-center">
+                  <h3 class="fa fa-sun-o mt-4"></h3>
+                  <h1>{{temp_status}}</h1>
+               </div>
+
+            </div>
+         </div>
+         <div class="card2 col-lg-4 col-md-5">
+
+            <form action="" method="POST">
+               <div class="row px-3">
+                  <input id="city-input"name="city-input" type="text" placeholder="Enter City Name" autocomplete="off">
+               </div>
+            </form>
+
+            <div class="mr-5">
+               <div class="line my-5"></div>
+               <p>Weather Details</p>
+               <div class="row px-3">
+
+                  <p class="light-text">Temperature</p>
+                  <p class="ml-auto">{{temp}}&#176;C</p>
+               </div>
+
+               <div class="row px-3">
+                  <p class="light-text">Feels Like</p>
+                  <p class="ml-auto">{{feels_like}}&#176;C</p>
+               </div>
+
+               <div class="row px-3">
+                  <p class="light-text">Minimum Temperature</p>
+                  <p class="ml-auto">{{temp_min}}&#176;C</p>
+               </div>
+
+               <div class="row px-3">
+                  <p class="light-text">Maximum Temperature</p>
+                  <p class="ml-auto">{{temp_max}}&#176;C</p>
+               </div>
+
+               <div class="row px-3">
+                  <p class="light-text">Humidity</p>
+                  <p class="ml-auto">{{hum}}%</p>
+               </div>
+
+               <div class="row px-3">
+                  <p class="light-text">Wind Speed</p>
+                  <p class="ml-auto">{{wind_speed}}%</p>
+               </div>
+
+               <div class="row px-3">
+                  <p class="light-text">Pressure</p>
+                  <p class="ml-auto">{{pressure}}hPa</p>
+               </div>
+               
+               <div class="line mt-3"></div>
+            </div>
+         </div>
+      </div>
+   </div>
+   </div>
+   <script src="/static/index.js"></script>
+</body>
+
+</html>
